@@ -1,0 +1,10 @@
+<script>
+    let str = 'entertainment'; // r
+    
+    for(char of str){
+        if(str.indexOf(char) == str.lastIndexOf(char)){
+            console.log(char); // prints the non repeated chars in string as their first index and last index of that char will be same as they are only once in that string
+            break; //if we need only first non repeated char , we can use break and cut the loop
+        }
+    }
+</script>
