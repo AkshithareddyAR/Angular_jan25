@@ -1,0 +1,27 @@
+<script>
+    // string literal
+    let str1 = 'hello';
+    let str2 = 'hello';
+
+    // string object
+    let str3 = new String('hello');
+    let str4 = new String('hello');
+
+    console.log(typeof str1); // string (datatype)
+    console.log(typeof str2); //object of string class
+
+    console.log(str1==str2); // values are compared - True
+    console.log(str2==str3); // typecasting - True
+    console.log(str3==str4); // address comparision happens - False
+
+    console.log(str1,str2,str3,str4);
+
+    let str5 = '2+3+5';
+    let str6 = new String('2+3+5');
+    console.log(eval(str5));
+    console.log(eval(str6));
+    
+    let str7 = str6.valueOf();
+    console.log(eval(str7));
+
+</script>

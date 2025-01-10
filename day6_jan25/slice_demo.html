@@ -1,0 +1,13 @@
+<script>
+    let str = 'This is Javascript Training';
+
+    console.log(str.substring(8,12)); // start,end index - Java will be printed
+    console.log(str.slice(8,12)); // start, end
+
+    console.log(str.substring(8,-2)); // start,end - 'This is' will be printed
+    console.log(str.slice(8,-2)); // start, end - 'Javascript Traini' will be printed
+    // slice works with negative index aswll, but substring doesn't
+
+    console.log(str.substring(8,12)); // starts at 8 and ends at 12
+    console.log(str.substr(8,12)); // starts at 8 and takes next 12 char
+</script>

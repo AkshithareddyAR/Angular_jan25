@@ -1,0 +1,26 @@
+<script>
+    let str = "hello world";
+
+    console.log(str.length); //check length
+
+    console.log(str.toUpperCase());
+    console.log(str.toLowerCase());
+
+    console.log(str.charAt(1));
+    console.log(str.at(1));
+    console.log(str[1]);
+
+    console.log(str.charAt(-1)); // fails with negative
+    console.log(str.at(-1)); // works
+    console.log(str[-1]); // fails with negative
+
+    console.log(str.charCodeAt(1)); //ASCII value of 'e'- 101
+
+    console.log('sachin'.concat(' tendulkar'));
+
+    console.log(str.indexOf('l')); //first occurence of l will be taken
+    console.log(str.lastIndexOf('l'));
+    console.log(str.indexOf('l',3)); //after how many indexes we want to check other than 1st occurence give after ,
+    console.log(str.indexOf('m')); // returns -1 if word given which is not present in the string
+
+</script>
