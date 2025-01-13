@@ -1,0 +1,48 @@
+<script>
+    let nums = [10,20,30,40,50]; //array of numbers
+    let cars = ['Tata','Honda']; //array of strings
+
+    let employees = [ //array of objects
+        {eId: 101, name:'sanjay', sal:5000,gender:'male'},
+        {eId: 101, name:'geeta', sal:8000,gender:'female'},
+        {eId: 101, name:'sai', sal:7000,gender:'male'},
+        {eId: 101, name:'sita', sal:9000,gender:'female'},
+        {eId: 101, name:'akash', sal:8000,gender:'male'},
+    ];
+
+    // find the first female employee from list
+
+    // let first_female_emp = {};
+   // for(emp of employees){
+       // if(emp.gender =="female"){
+         //   first_female_emp = emp;
+         //   break;
+     //   }
+   // }
+   // console.log(first_female_emp);
+
+    //or
+
+    let first_female_emp = employees.find((emp) => emp.gender == 'female'); //higher order function and call back function
+    console.log(first_female_emp);
+
+    //at what index first female emp is present ?
+    let first_female_emp_ind = employees.findIndex((emp) => emp.gender == 'female'); //higher order function and call back function
+    console.log(first_female_emp_ind);
+
+    // find last female employee
+    let last_female_emp = employees.findLast((emp) => emp.gender == 'female'); //higher order function and call back function
+    console.log(last_female_emp);
+
+    // index of last female employee
+    let last_female_emp_ind = employees.findLastIndex((emp) => emp.gender == 'female'); //higher order function and call back function
+    console.log(last_female_emp_ind);
+
+    // return all  the female employees
+    let all_female_emp = employees.filter((emp) => emp.gender == 'female'); //higher order function and call back function
+    console.log(all_female_emp);
+
+    // find will return first object that satisfies the condition and filter returns all the matches in array that condition asks, 
+    // if doesn't satisfy the conditions , it gives an empty array
+
+</script>
